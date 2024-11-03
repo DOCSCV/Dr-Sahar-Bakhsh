@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3beac;
+    color: #5C4033;
+    margin: 0;
+    padding: 30px; /* Increased padding */
+    line-height: 1.6; /* Improved line-height for readability */
+}
+
+h1, h2 {
+    color: #5C4033;
+    margin-bottom: 1em; /* Added margin for better spacing */
+}
+
+h1 {
+    font-size: 2.5em; /* Increased h1 size */
+}
+
+h2 {
+    font-size: 2em; /* Increased h2 size */
+}
+
+.recipe {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 30px; /* Increased padding */
+    margin-bottom: 30px; /* Increased margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+}
+
+.recipe-title {
+    font-size: 28px; /* Increased title size */
+    color: #5C4033;
+    margin-bottom: 15px; /* Increased margin */
+}
+
+.ingredients ul, .instructions ol {
+    list-style-type: disc;
+    margin-left: 30px; /* Increased indent */
+    margin-bottom: 1em; /* Added space between list items */
+}
+
+a {
+    color: #632d06;
+    text-decoration: none; /* Removed underline from links */
+    transition: color 0.3s ease; /* Added smooth transition for hover effect */
+}
+
+a:hover {
+    color: #B75D3A; /* Slightly darker pink on hover */
+}
