@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #e3beac;
-    color: #5C4033;
+    color: #f89350;
     margin: 0;
     padding: 30px; /* Increased padding */
     line-height: 1.6; /* Improved line-height for readability */
@@ -18,6 +18,9 @@ h1 {
 
 h2 {
     font-size: 2em; /* Increased h2 size */
+}
+h4 {
+    font-size: 1.5em; /* Increased h4 size */
 }
 
 .recipe {

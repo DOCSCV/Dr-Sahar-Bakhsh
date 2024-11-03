@@ -5,7 +5,7 @@ body {
 }
 
 nav {
-    background-color: yellow;  /* Changed to yellow */
+    background-color: yellow;
     padding: 15px 20px;
     text-align: left;
     position: fixed;
@@ -39,46 +39,68 @@ nav a.active {
     border: none;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30px;
-    max-width: 960px;
-    margin: 0 auto;
-    padding-top: 80px; /* Space for the fixed navbar */
-    margin-top: 0px;
+.business-card {
+    width: 100%; /* Changed to 100% for better mobile view */
+    font-family: 'Garamond', serif;
+    margin-bottom: 20px; /* Added margin for spacing */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    padding: 20px; /* Added padding for better visual appeal */
 }
 
-.left-container, .right-container {
+.business-card p {
+    word-wrap: break-word;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.business-card p:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Changed to column for better mobile layout */
+    align-items: center; /* Changed to center to align items in the middle */
+    padding: 20px; /* Reduced padding for smaller screens */
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.left-container,
+.right-container {
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
     border: 1px solid #0098da;
     border-radius: 5px;
     margin-bottom: 20px;
-    margin-right: 20px;
-   
+    background-color: #f5dede;
 }
 
 .left-container {
     text-align: center;
-    order: 1; /* Image on the left */
+    order: 1;
 }
 
 .right-container {
     text-align: left;
-    order: 2; /* Text on the right */
+    order: 2;
 }
 
 .left-container img {
     width: 100%;
-    max-width: 185px;
+    max-width: 210px;
     height: auto;
     border-radius: 50%;
     margin-top: 10px;
     object-fit: cover;
-   
+    display: block; /* Added to prevent extra space below the image */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main {
@@ -105,31 +127,45 @@ h3 {
     font-weight: 600;
 }
 
+h4 {
+    font-size: 1.1em;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* Media query for larger screens */
 @media (min-width: 768px) {
     .container {
         flex-direction: row;
         align-items: flex-start;
     }
+
     .left-container {
         width: 25%;
     }
+
     .right-container {
         width: 75%;
     }
 }
 
-/* Collapsible Navbar Styles */
 .navbar-toggler {
-    background-color: #0098da; /* Or any color you prefer */
+    background-color: #0098da;
     color: rgb(206, 70, 70);
     border: none;
 }
 
-@media (max-width: 768px) { /* Adjust the breakpoint as needed */
+@media (max-width: 768px) {
     .navbar-nav {
-        display: none; /* Hide the navigation links by default */
+        display: none;
     }
-    .navbar-collapse.show .navbar-nav { 
-        display: block; /* Show the links when the toggler is clicked */
+
+    .navbar-collapse.show .navbar-nav {
+        display: block;
+    }
+
+    .left-container,
+    .right-container {
+        margin-right: 0; /* Remove right margin on smaller screens */
     }
 }
