@@ -8,6 +8,10 @@ navLinks.forEach(link => {
     });
 
     // Add the 'active' class to the clicked link
-    this.classList.add('active'); 
+    this.classList.add('active');
   });
 });
+
+function openResume() {
+  window.open("Resume.pdf"); 
+}
