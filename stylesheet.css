@@ -6,6 +6,7 @@ body {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
+    background-image: url("images/background.png");
 }
 
 nav {
@@ -64,8 +65,44 @@ nav a.active {
 }
 
 .job-listing {
-    margin-bottom: 20px; /* Adjust the value as needed */
-}
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif; 
+  }
+  /* ... other CSS rules ... */
+
+.job-listing p span.salary-amount { /* Style the salary amount */
+   
+    padding: 3px 5px; /* Add some padding for visual separation */
+    border-radius: 3px; /* Add rounded corners */
+    font-weight: bold;
+  }
+  .job-listing h4 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 18px; 
+    margin-top: 0; 
+  }
+  
+  .job-listing p {
+    margin-bottom: 8px; 
+    text-align: left;
+    line-height: 1.4; 
+    font-size: 14px; 
+  }
+  
+  .job-listing a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px; 
+    font-size: 14px; 
+  }
 
 .styled-button {
     background-color: #ced1e0; /* Example background color */
@@ -84,6 +121,7 @@ nav a.active {
     max-width: 960px;
     margin: 30px auto 30px; /* Adjust the top margin here */
 }
+
 .left-container,
 .right-container {
     width: 100%;
@@ -100,7 +138,7 @@ nav a.active {
     text-align: center;
     order: 1;
     margin-right: 10px; /* Space between left and right containers */
-  
+
 }
 
 .right-container {
