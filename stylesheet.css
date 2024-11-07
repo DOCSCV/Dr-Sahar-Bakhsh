@@ -1,12 +1,15 @@
 body {
-    font-family: 'Arial', sans-serif; 
-    background-color: #f8f8f8; 
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
     margin: 0;
-    color: #39393a; 
+    color: #39393a;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 nav {
-    background-color: #007bff; 
+    background-color: #007bff;
     padding: 15px 20px;
     text-align: left;
     position: fixed;
@@ -27,12 +30,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgba(91, 71, 163, 0.24); 
+    background-color: rgba(91, 71, 163, 0.24);
     transform: translateY(-2px);
 }
 
 nav a.active {
-    background-color: #c1dbf7; 
+    background-color: #c1dbf7;
     color: #fff;
     border: none;
 }
@@ -43,14 +46,14 @@ nav a.active {
     margin-bottom: 20px;
     box-sizing: border-box;
     padding: 20px;
-    background-color: #f2f7fd; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    background-color: #f2f7fd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .business-card p {
     font-size: 16px;
     margin-bottom: 8px;
-    font-weight: normal; 
+    font-weight: normal;
     text-align: center;
 }
 
@@ -60,24 +63,36 @@ nav a.active {
     margin-bottom: 15px;
 }
 
+.job-listing {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+.styled-button {
+    background-color: #ced1e0; /* Example background color */
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     max-width: 960px;
-    margin: 80px auto 20px; 
+    margin: 30px auto 30px; /* Adjust the top margin here */
 }
-
 .left-container,
 .right-container {
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
-    border: none; 
+    border: none;
     border-radius: 5px;
     margin-bottom: 20px;
-    background-color: #fff; 
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -85,6 +100,7 @@ nav a.active {
     text-align: center;
     order: 1;
     margin-right: 10px; /* Space between left and right containers */
+  
 }
 
 .right-container {
@@ -97,14 +113,14 @@ nav a.active {
     max-width: 210px;
     height: auto;
     border-radius: 50%;
-    margin-top: 10px;
+    margin-top: 5px;
     object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    background-color: rgb(250, 241, 244); 
-    margin-bottom: 30px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(250, 241, 244);
+    margin-bottom: 30px;
 }
 
 main {
@@ -126,15 +142,25 @@ h2 {
 
 h3 {
     font-size: 1.3em;
-    margin-top: 20px; 
+    margin-top: 20px;
     font-weight: 600;
-    color: #007bff; 
+    color: #007bff;
 }
 
 h4 {
     font-size: 1.1em;
     margin-top: 5px;
     font-weight: 600;
+    color: #007bff;
+
+}
+
+h5 {
+    font-size: 1.1em;
+    margin-top: 5px;
+    font-weight: 600;
+    text-align: center;
+    color: #007bff;
 }
 
 /* Media query for larger screens */
@@ -154,8 +180,8 @@ h4 {
 }
 
 .navbar-toggler {
-    background-color: #007bff; 
-    color: #007bff; 
+    background-color: #007bff;
+    color: #007bff;
     border: none;
 }
 
