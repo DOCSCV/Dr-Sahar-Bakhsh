@@ -1,12 +1,12 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     margin: 0;
     color: #39393a;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
-    background-image: url("images/background.png");
+ 
 }
 
 nav {
